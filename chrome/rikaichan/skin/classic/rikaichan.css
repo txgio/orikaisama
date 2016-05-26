@@ -1,0 +1,76 @@
+
+#rikaichan-lbar-close {
+	list-style-image: url("chrome://rikaichan/skin/smile.png");
+}
+
+#rikaichan-lbar-close:hover {
+	list-style-image: url("chrome://rikaichan/skin/smile_close.png");
+}
+
+#rikaichan-lbar-close.waiting {
+	list-style-image: url("chrome://rikaichan/skin/smile_wait.png");
+}
+
+#rikaichan-lbar-search {
+	list-style-image: url("chrome://rikaichan/skin/search.png");
+}
+
+#rikaichan-lbar-copy {
+	list-style-image: url("chrome://rikaichan/skin/copy.png");
+}
+
+#rikaichan-lbar-save {
+	list-style-image: url("chrome://rikaichan/skin/save.png");
+}
+
+#rikaichan-lbar-config {
+	list-style-image: url("chrome://rikaichan/skin/config.png");
+}
+
+#rikaichan-toggle-button {
+	list-style-image: url("chrome://rikaichan/skin/smile.png");
+}
+#rikaichan-toggle-button[checked=true] {
+	list-style-image: url("chrome://rikaichan/skin/smile_star.png");
+}
+#rikaichan-lbar-button {
+	list-style-image: url("chrome://rikaichan/skin/smile_lbar.png");
+}
+
+#rikaichan-toggle-button-gs {
+	list-style-image: url("chrome://rikaichan/skin/smile_gs.png");
+}
+#rikaichan-toggle-button-gs[checked=true] {
+	list-style-image: url("chrome://rikaichan/skin/smile_star_gs.png");
+}
+#rikaichan-lbar-button-gs {
+	list-style-image: url("chrome://rikaichan/skin/smile_lbar_gs.png");
+}
+
+#rikaichan-status {
+	list-style-image: url("chrome://rikaichan/skin/smile_grey.png");
+}
+#rikaichan-status[rcx_enabled=true] {
+	list-style-image: url("chrome://rikaichan/skin/smile_star.png");
+}
+
+#rcx-lookupbar-text {
+	min-width: 150px;
+}
+
+#rcx-lookupbox-text {
+	min-width: 65px;
+}
+
+#rcx-lookupbox-grip,
+#rcx-lookupbar-grip {
+	background-image: url("chrome://rikaichan/skin/gripper.png");
+	min-height: 22px;
+	min-width: 3px;
+}
+
+#rcx-lookupbox-split,
+#rcx-lookupbar-split {
+	background: transparent;
+	border: none !important;
+}

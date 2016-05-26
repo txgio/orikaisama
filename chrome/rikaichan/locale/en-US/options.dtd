@@ -1,0 +1,231 @@
+﻿<!ENTITY Tab.General "General">
+<!ENTITY Tab.Startup "Startup">
+<!ENTITY Tab.Menus "Menus">
+<!ENTITY Tab.Keyboard "Keyboard">
+<!ENTITY Tab.Dictionaries "Dictionaries">
+<!ENTITY Tab.KanjiDictionary "Kanji Dictionary">
+<!ENTITY Tab.Epwing "EPWING">
+<!ENTITY Tab.ClipboardAndSave "Clipboard &amp; Save">
+<!ENTITY Tab.Vocab "Vocab">
+<!ENTITY Tab.Anki "Anki">
+
+<!ENTITY General.ColorScheme "Color scheme:">
+<!ENTITY General.Blue "Blue">
+<!ENTITY General.LightBlue "Light Blue">
+<!ENTITY General.Black "Black">
+<!ENTITY General.Yellow "Yellow">
+<!ENTITY General.Opacity "Popup opacity:">
+<!ENTITY General.ToolTipOpacity "Range: [60-100], with 100 being completely opaque">
+<!ENTITY General.EnableMode "Enable mode:">
+<!ENTITY General.CurrentTabOnly "Current tab only">
+<!ENTITY General.CurrentBrowserOnly "Current browser only">
+<!ENTITY General.AllBrowsers "All browsers">
+<!ENTITY General.AlwaysEnableAtStartup "Always enable at startup">
+<!ENTITY General.Volume "Audio volume:">
+<!ENTITY General.ToolTipVolume "Range: [0-100], with 100 being the loudest.">
+<!ENTITY General.AutoPlayAudio "Play audio on hover">
+<!ENTITY General.ToolTipAutoPlayAudio "Automatically play audio for the highlighted word after it has been highlighted for at least 500 milliseconds.">
+<!ENTITY General.EnableNoAudioClip "Enable the 'no audio' clip">
+<!ENTITY General.ToolTipEnableNoAudioClip "If the audio for the highlighted word was not found, play an audio clip that says 'no audio'.">
+<!ENTITY General.HighlightText "Highlight text">
+<!ENTITY General.TranAltTitle "Translate alt/title tags">
+<!ENTITY General.SelectedInLookupBar "Automatically use selected text in Lookupbar">
+<!ENTITY General.BottomLookupBar "Show Lookupbar at the bottom">
+<!ENTITY General.EnlargeSmallDocuments "Enlarge small documents">
+<!ENTITY General.ShowIconInStatusbar "Show icon in statusbar">
+<!ENTITY General.ShowMiniHelp "Show mini help">
+<!ENTITY General.RoundedCorners "Rounded corners">
+<!ENTITY General.ToolTipRoundedCorners "Give the popup window rounded corners.">
+<!ENTITY General.MergeDivs "Merge DIV elements (enable this if Rikaisama is only highlighting single characters in PDF files)">
+
+<!ENTITY Startup.LookupBar "Lookup Bar">
+<!ENTITY Startup.Epwing "EPWING Mode">
+<!ENTITY Startup.Sanseido "Sanseido Mode">
+<!ENTITY Startup.Sticky "Sticky Mode">
+<!ENTITY Startup.SuperSticky "Super Sticky Mode">
+
+<!ENTITY Menus.ContextMenu "Context Menu">
+<!ENTITY Menus.Toggle "Toggle">
+<!ENTITY Menus.LookupBar "LookupBar">
+<!ENTITY Menus.ToolsMenu "ToolsMenu">
+
+
+<!ENTITY Keyboard.Toggle "Toggle:">
+<!ENTITY Keyboard.LookupBar "LookupBar:">
+<!ENTITY Keyboard.Ctrl "Ctrl">
+<!ENTITY Keyboard.Alt "Alt">
+<!ENTITY Keyboard.Shift "Shift">
+<!ENTITY Keyboard.NoteRestartBrowser "Note: Restart the browser after making changes.">
+<!ENTITY Keyboard.KeysWhenVisible "Keys when popup is visible">
+<!ENTITY Keyboard.AlternateView "Alternate view:">
+<!ENTITY Keyboard.StickyPopup "Sticky popup:">
+<!ENTITY Keyboard.MovePopupDown "Move popup down:">
+<!ENTITY Keyboard.CopyToClipboard "Copy to clipboard:">
+<!ENTITY Keyboard.SaveToFile "Save to file:">
+<!ENTITY Keyboard.SaveToFileKana "Save to file ($d=$r):">
+<!ENTITY Keyboard.HideShowDefinitions "Hide/show definitions:">
+<!ENTITY Keyboard.SwitchDictionary "Switch dictionary:">
+<!ENTITY Keyboard.PreviousCharacter "Previous character:">
+<!ENTITY Keyboard.NextCharacter "Next character:">
+<!ENTITY Keyboard.NextWord "Next word:">
+<!ENTITY Keyboard.JdicAudio "JDIC audio:">
+<!ENTITY Keyboard.SanseidoMode "Sanseido mode:">
+<!ENTITY Keyboard.EpwingMode "EPWING mode:">
+<!ENTITY Keyboard.RealTimeImport "Anki Real-Time Import:">
+<!ENTITY Keyboard.RealTimeImportKana "Anki Real-Time Import ($d=$r):">
+<!ENTITY Keyboard.SuperStickyMode "Super Sticky mode:">
+<!ENTITY Keyboard.EditNotes "Edit notes:">
+<!ENTITY Keyboard.DisableTheseKeys "Disable these keys">
+
+
+<!ENTITY Dictionaries.Priority "Priority">
+<!ENTITY Dictionaries.ShowFreq "Show frequency information">
+<!ENTITY Dictionaries.ToolTipShowFreq1  "Show frequency group number. The lower the number, the">
+<!ENTITY Dictionaries.ToolTipShowFreq2  "more frequent the word. All words that share the same">
+<!ENTITY Dictionaries.ToolTipShowFreq3  "frequency are members of the same frequency group. So">
+<!ENTITY Dictionaries.ToolTipShowFreq4  "if a word belongs to frequency group 1563, it means that">
+<!ENTITY Dictionaries.ToolTipShowFreq5  "there exist 1562 frequency groups that are more frequent.">
+<!ENTITY Dictionaries.ToolTipShowFreq6  "Colors of the frequency numbers:">
+<!ENTITY Dictionaries.ToolTipShowFreq7  "　　●　Very common words are green-ish">
+<!ENTITY Dictionaries.ToolTipShowFreq8  "　　●　Common words are yellow-ish">
+<!ENTITY Dictionaries.ToolTipShowFreq9  "　　●　Uncommon words are orange-ish">
+<!ENTITY Dictionaries.ToolTipShowFreq10 "　　●　Rare words are pink-ish">
+<!ENTITY Dictionaries.ToolTipShowFreq11 "Frequencies are based on analysis of 5000+ novels.">
+<!ENTITY Dictionaries.ToolTipShowFreq12 "Naturally, frequency based on other mediums might vary.">
+<!ENTITY Dictionaries.ToolTipShowFreq13 "Not all words have frequency information.">
+<!ENTITY Dictionaries.ShowPitchAccent "Show pitch accent">
+<!ENTITY Dictionaries.ToolTipShowPitchAccent "Display pitch accent number to the right of the reading.">
+<!ENTITY Dictionaries.HidePitchAccentPOS "Hide pitch accent part-of-speech unless ',' or '|' is present">
+<!ENTITY Dictionaries.HideDefinitions "Hide definitions">
+<!ENTITY Dictionaries.HideX "Hide (X)-rated entries">
+<!ENTITY Dictionaries.ShowWordType "Show word type indicators [example: (v1,n)]">
+<!ENTITY Dictionaries.ShowPopular "Show &quot;popular&quot; indicator [example: (P)]">
+<!ENTITY Dictionaries.MaxEntries "Maximum entries displayed:">
+<!ENTITY Dictionaries.MaxNames "Maximum names displayed:">
+<!ENTITY Dictionaries.More "More...">
+
+
+<!ENTITY Kanji.DisplayedInformation "Displayed Information">
+
+
+<!ENTITY Epwing.EpwingPathCaption "EPWING Dictionaries">
+<!ENTITY Epwing.Add "Add">
+<!ENTITY Epwing.Remove "Remove">
+<!ENTITY Epwing.DicFallback "Dictionary fallback:">
+<!ENTITY Epwing.ToolTipDicFallback "Lookup behavior to use when the current dictionary doesn't contain the highlighted word.">
+<!ENTITY Epwing.DicFallbackOptNone "None">
+<!ENTITY Epwing.DicFallbackOptJMDICT "Use the default non-EPWING dictionary (EDICT)">
+<!ENTITY Epwing.DicFallbackOptEpwing "Use the next available EPWING dictionary">
+<!ENTITY Epwing.MaxLines "Max lines per entry:">
+<!ENTITY Epwing.ToolTipMaxLines "Limit the number of lines shown in the popup window for each entry.">
+<!ENTITY Epwing.ShowConjugation "Show conjugation rule">
+<!ENTITY Epwing.ToolTipShowConjugation "Example conjugation rule: '(&lt; negative &lt; past)'.">
+<!ENTITY Epwing.ShowDicNum "Show number and title of current dictionary in top-right of popup">
+<!ENTITY Epwing.ToolTipShowDicNum "The number is the index of the dictionary in the list above. To hide the title, set 'extensions.rikaisama.epwingshowtitle' to false in 'about:config'. To use the full title instead of the shortened title, set 'extensions.rikaisama.epwingshowshorttitle' to false in 'about:config'.">
+<!ENTITY Epwing.StripNewlines "Compact (strip carriage returns and line feeds)">
+<!ENTITY Epwing.ToolTipStripNewlines "This will make the popup look a little more like non-EPWING mode.">
+<!ENTITY Epwing.ShowAllEntries "Show all entries from the same dictionary at the same time">
+<!ENTITY Epwing.ToolTipStripShowAllEntries "If unchecked, the entries will appear one at a time.">
+<!ENTITY Epwing.MaxEntries "Max entries:">
+<!ENTITY Epwing.ToolTipStripMaxEntries "Maximum number of EPWING entries to display.">
+<!ENTITY Epwing.AppendEdict "Append EDICT gloss">
+<!ENTITY Epwing.ToolTipStripAppendEdict "Append the results from the built-in dictionary (EDICT) to the end of the EPWING results.">
+<!ENTITY Epwing.AddColorAndPitch "Parse entries to add color, show pitch and enhance frequency (see tooltip for dictionary support)">
+<!ENTITY Epwing.AddColorAndPitchHelp1 "This option will only be applied to the following dictionaries:">
+<!ENTITY Epwing.AddColorAndPitchHelp2 "　　●　『研究社　新和英大辞典　第５版』 (Kenkyusha Shin Waei Daijiten 5th Edition [J-E])">
+<!ENTITY Epwing.AddColorAndPitchHelp3 "　　●　『広辞苑第六版』 (Kojien 6th Edition [J-J])">
+<!ENTITY Epwing.AddColorAndPitchHelp4 "　　●　『大辞泉』 (Daijisen [J-J])">
+<!ENTITY Epwing.AddColorAndPitchHelp5 "　　●　『明鏡国語辞典』 (Meikyo Kokugojiten [J-J])">
+<!ENTITY Epwing.AddColorAndPitchHelp6 "　　●　『大辞林 第2版』 (Dajirin 2nd Edition [J-J])">
+<!ENTITY Epwing.AddColorAndPitchHelp7 "　　●　『三省堂　スーパー大辞林』 (Sanseido Super Daijirin [J-J])">
+<!ENTITY Epwing.AddColorAndPitchHelp8 "　　●　『新明解国語辞典　第五版』 (Shinmeikai Kokugojiten 5th Edition [J-J])">
+<!ENTITY Epwing.AddColorAndPitchHelp9 "">
+<!ENTITY Epwing.AddColorAndPitchHelp10 "Advanced: To force parsing of unsupported dictionaries,">
+<!ENTITY Epwing.AddColorAndPitchHelp11 "set 'extensions.rikaisama.epwingforceparse' to true in 'about:config'.">
+<!ENTITY Epwing.SearchNextLongest "If longest match could not be found, search for the next longest">
+<!ENTITY Epwing.ToolTipSearchNextLongest "For example, the word '自由研究' does not exist in many EPWING dictionaries, however, the word '自由' does. So if '自由研究' could not be found, '自由' will then be searched.">
+<!ENTITY Epwing.RemoveRegex "Remove text matching the following RegEx:">
+<!ENTITY Epwing.ToolTipRemoveRegex "You can use this to remove things like example sentences or other unnecessary text.">
+<!ENTITY Epwing.Keys "EPWING Keys">
+<!ENTITY Epwing.EpwingMode "EPWING mode:">
+<!ENTITY Epwing.NextDic "Next dictionary:">
+<!ENTITY Epwing.PrevDic "Previous dictionary:">
+<!ENTITY Epwing.NextEntry "Next entry:">
+<!ENTITY Epwing.PrevEntry "Previous entry:">
+
+
+<!ENTITY ClipSave.Filename "Filename:">
+<!ENTITY ClipSave.ToolTipFilename "The text file that will contain the information for all saved words.">
+<!ENTITY ClipSave.AudioDir "Saved audio:">
+<!ENTITY ClipSave.ToolTipAudioDir "The directory that will contain the saved audio clips. If the audio clip is already found in this directory, then it will not need to be downloaded again thus decreasing playback delay.">
+<!ENTITY ClipSave.SaveAudioOnPlay "Save audio on play (instead of just when the save key is pressed)">
+<!ENTITY ClipSave.ToolTipSaveAudioOnPlay "You should enable this if you want to cache audio clips in the audio directory to avoid download delays. You should definitely enable this if you have the 'Play audio on hover' option selected.">
+<!ENTITY ClipSave.Encoding "Encoding:">
+<!ENTITY ClipSave.BomHeader "Add header to UTF-8">
+<!ENTITY ClipSave.LineEnding "Line ending:">
+<!ENTITY ClipSave.AnkiTags "Tags:">
+<!ENTITY ClipSave.ToolTipAnkiTags "The text to use for the Tags token below. Additionally, these tags will automatically be used with the Anki Real-Time Import feature.">
+<!ENTITY ClipSave.AnkiTagsHelp "(separated by spaces)">
+<!ENTITY ClipSave.SaveNotes "Notes:">
+<!ENTITY ClipSave.ToolTipSaveNotes "The text used for the Notes token below.">
+<!ENTITY ClipSave.SaveFormat "Save format:">
+<!ENTITY ClipSave.ToolTipSaveFormat "The save format consisting of one or more of the below tokens.">
+<!ENTITY ClipSave.FmtCaption "Available save format tokens">
+<!ENTITY ClipSave.FmtAudioFile "Audio file:">
+<!ENTITY ClipSave.ToolTipFmtAudioFile "Name of pronunciation .mp3 file for the saved word. Format: 'kana - kanji.mp3'.">
+<!ENTITY ClipSave.FmtDefinition "Definition:">
+<!ENTITY ClipSave.ToolTipDefinition "The definition of the saved word.">
+<!ENTITY ClipSave.FmtDictForm "Dictionary form:">
+<!ENTITY ClipSave.ToolTipFmtDictForm "The dictionary/plain form of the saved word.">
+<!ENTITY ClipSave.FmtFrequency "Frequency:">
+<!ENTITY ClipSave.ToolTipFmtFrequency "The frequency of the saved word.">
+<!ENTITY ClipSave.FmtHighlighted "Highlighted word:">
+<!ENTITY ClipSave.ToolTipFmtHighlighted "The highlighted word (including any conjugations).">
+<!ENTITY ClipSave.FmtNotes "Notes:">
+<!ENTITY ClipSave.ToolTipFmtNotes "The text from the 'Notes' text box above.">
+<!ENTITY ClipSave.FmtPitch "Pitch accent:">
+<!ENTITY ClipSave.ToolTipFmtPitch "The pitch accent of the saved word.">
+<!ENTITY ClipSave.FmtReading "Reading:">
+<!ENTITY ClipSave.ToolTipFmtReading "The kana reading of the saved word.">
+<!ENTITY ClipSave.FmtSentence "Sentence:">
+<!ENTITY ClipSave.ToolTipFmtSentence "The sentence that the saved word appeared in.">
+<!ENTITY ClipSave.FmtSentenceWithBlank "Sentence w/ blank:">
+<!ENTITY ClipSave.ToolTipFmtSentenceWithBlank "Like 'Sentence' except the saved word is replaced with a fill-in-the-blank.">
+<!ENTITY ClipSave.FmtTab "Tab character:">
+<!ENTITY ClipSave.ToolTipFmtTab "A normal tab character (\t) used for separating fields.">
+<!ENTITY ClipSave.FmtAnkiTags "Tags:">
+<!ENTITY ClipSave.ToolTipFmtAnkiTags "The text from the 'Tags' text box above.">
+<!ENTITY ClipSave.FmtTitle "Title:">
+<!ENTITY ClipSave.ToolTipTitle "The title of the page that contains the saved word.">
+<!ENTITY ClipSave.FmtURL "URL:">
+<!ENTITY ClipSave.ToolTipFmtURL "The URL of the page that contains the saved word.">
+
+
+<!ENTITY Vocab.KnownWordsCaption "Known Words">
+<!ENTITY Vocab.KnownWordsDesc1 "Place '*' or '*_r' next to words that you should already know.">
+<!ENTITY Vocab.KnownWordsDesc2 "'*' means word was found via it's expression. '*_r' means word was found via it's reading.">
+<!ENTITY Vocab.KnownWordsFile "Text file that contains the list of words that you should already know:">
+<!ENTITY Vocab.KnownWordsFileTooltip "One word per line. Lines may contain multiple tab-separated columns.">
+<!ENTITY Vocab.KnownWordsFileCol "If the file contains multiple columns, specify which column contains the word:">
+<!ENTITY Vocab.ToDoWordsCaption "To-Do Words">
+<!ENTITY Vocab.ToDoWordsDesc1 "Place '*t' or '*t_r' next to words that appear in your to-do list of vocabulary words.">
+<!ENTITY Vocab.ToDoWordsDesc2 "'*t' means word was found via it's expression. '*t_r' means word was found via it's reading.">
+<!ENTITY Vocab.ToDoWordsFile "Text file that contains your to-do list of vocabulary words:">
+<!ENTITY Vocab.ToDoWordsFileTooltip "One word per line. Lines may contain multiple tab-separated columns.">
+<!ENTITY Vocab.ToDoWordsFileCol "If the file contains multiple columns, specify which column contains the word:">
+
+
+<!ENTITY Anki.RTICaption "Anki Real-Time Import">
+<!ENTITY Anki.RTIHelp "Options related to Anki's Real-Time Import shared plugin.">
+<!ENTITY Anki.ToolTipFmtNotes "The text from the 'Notes' text box in the 'Clipboard &amp; Save' tab.">
+<!ENTITY Anki.ToolTipFmtAnkiTags "The text from the 'Tags' text box in the 'Clipboard &amp; Save' tab.">
+<!ENTITY Anki.DownloadLink "(Download)">
+<!ENTITY Anki.HelpLink "(Help)">
+<!ENTITY Anki.RTIFieldNames "Field names:">
+<!ENTITY Anki.ToolTipRTIFieldNames "The field names from your Anki deck that map to each token in the 'Save format' text box above">
+<!ENTITY Anki.RTIFieldNamesHelp "Separated by spaces. Should map to the save format above.">
+<!ENTITY Anki.RTISaveAudio "Save audio when one of the Anki Real-Time Import keys is pressed">
+<!ENTITY Anki.RTIPort "UDP port:">
+<!ENTITY Anki.ToolTipRTIPort "The UDP port that matches the UDP port of the Anki Real-Time Import plugin.">
+<!ENTITY Anki.RTIPortHelp "(advanced users only)">
+

@@ -1,0 +1,30 @@
+﻿
+<!ENTITY rikaichan.toggle.cm "Rikaisama">
+<!ENTITY rikaichan.toggle.cm.key "K">
+
+<!ENTITY rikaichan.toggle.tm "Rikaisama">
+<!ENTITY rikaichan.toggle.tm.key "K">
+
+<!ENTITY rikaichan.lbar.cm "Rikaisama Lookupbar">
+<!ENTITY rikaichan.lbar.cm.key "L">
+
+<!ENTITY rikaichan.lbar.tm "Rikaisama Lookupbar">
+<!ENTITY rikaichan.lbar.tm.key "L">
+
+<!ENTITY rikaichan.copy.cm "Rikaisama Copy">
+<!ENTITY rikaichan.copy.cm.key "C">
+
+<!ENTITY rikaichan.copy.tm "Rikaisama Copy">
+<!ENTITY rikaichan.copy.tm.key "C">
+
+<!ENTITY rikaichan.lbar.close.tip "Close Lookupbar">
+<!ENTITY rikaichan.lbar.search.tip "Search / Again">
+<!ENTITY rikaichan.lbar.copy.tip "Copy Result">
+<!ENTITY rikaichan.lbar.save.tip "Save Result">
+<!ENTITY rikaichan.lbar.config.tip "Configure">
+
+<!ENTITY rikaichan.toolbar.toggle "Rikaisama">
+<!ENTITY rikaichan.toolbar.toggle.tip "Rikaisama">
+<!ENTITY rikaichan.toolbar.lbar "Lookupbar">
+<!ENTITY rikaichan.toolbar.lbar.tip "Rikaisama Lookupbar">
+<!ENTITY rikaichan.toolbar.options "Options...">

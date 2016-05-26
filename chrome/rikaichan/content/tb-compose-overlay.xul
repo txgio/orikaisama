@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<!--
+
+	Rikaichan
+	Copyright (C) 2005-2015 Jonathan Zarate
+	http://www.polarcloud.com/
+
+
+	This program is free software; you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation; either version 2 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program; if not, write to the Free Software
+	Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+
+	Please do not change or remove any of the copyrights or links to web pages
+	when modifying any of the files. - Jon
+
+-->
+
+<!--
+  Rikaisama
+  Author:  Christopher Brochtrup
+  Contact: cb4960@gmail.com
+  Website: http://rikaisama.sourceforge.net/
+-->
+
+<?xml-stylesheet href="chrome://rikaichan/skin/rikaichan.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://rikaichan/locale/rikaichan.dtd">
+
+<overlay id="rikaichan" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script type="application/javascript;version=1.7" src="config.js" />
+<script type="application/javascript;version=1.7" src="rikaichan.js" />
+<script type="application/javascript;version=1.7" src="data.js" />
+<script type="application/javascript;version=1.7" src="epwing.js" />
+
+<commandset id="composeCommands">
+	<command id="rikaichan-toggle-cmd" oncommand="rcxMain.toggle()"/>
+	<command id="rikaichan-lbar-cmd" oncommand="rcxMain.lbToggle()"/>
+	<command id="rikaichan-copy-cmd" oncommand="rcxMain.copyToClip()"/>
+	<command id="rikaichan-options-cmd" oncommand="rcxMain.configPage()"/>
+</commandset>
+
+<popup id="msgComposeContext">
+	<menuseparator id="rikaichan-separator-cm" hidden="true"/>
+	<menuitem id="rikaichan-toggle-cm" label="&rikaichan.toggle.cm;"
+		accesskey="&rikaichan.toggle.cm.key;" key="rikaichan-toggle-key" command="rikaichan-toggle-cmd" type="checkbox" hidden="true"/>
+	<menuitem id="rikaichan-lbar-cm" label="&rikaichan.lbar.cm;"
+		accesskey="&rikaichan.lbar.cm.key;" key="rikaichan-lbar-key" command="rikaichan-lbar-cmd" hidden="true"/>
+	<menuitem id="rikaichan-copy-cm" label="&rikaichan.copy.cm;"
+		accesskey="&rikaichan.copy.cm.key;" key="rikaichan-copy-key" command="rikaichan-copy-cmd" hidden="true"/>
+</popup>
+
+<menupopup id="taskPopup">
+	<menuseparator id="rikaichan-separator-tm" hidden="true"/>
+	<menuitem id="rikaichan-toggle-tm" label="&rikaichan.toggle.tm;" accesskey="&rikaichan.toggle.tm.key;"
+		key="rikaichan-toggle-key" command="rikaichan-toggle-cmd" type="checkbox" hidden="true"/>
+	<menuitem id="rikaichan-lbar-tm" label="&rikaichan.lbar.tm;" accesskey="&rikaichan.lbar.tm.key;"
+		key="rikaichan-lbar-key" command="rikaichan-lbar-cmd" hidden="true"/>
+	<menuitem id="rikaichan-copy-tm" label="&rikaichan.copy.tm;" accesskey="&rikaichan.copy.tm.key;"
+		key="rikaichan-copy-key" command="rikaichan-copy-cmd" hidden="true"/>
+</menupopup>
+
+<window id="msgcomposeWindow">
+	<toolbar id="rikaichan-lbar" hidden="true" align="center" fullscreentoolbar="true" insertbefore="browser-stack">
+		<toolbarbutton id="rikaichan-lbar-close" tooltiptext="&rikaichan.lbar.close.tip;"
+			oncommand="rcxMain.lbHide();" />
+
+		<toolbaritem id="rcx-lookupbar-texttbi" title="Rikaichan Lookup">
+			<hbox id="rcx-lookupbar-hbox" align="center" persist="width">
+				<textbox id="rcx-lookupbar-text" emptytext="rikaichan" flex="1"
+					onkeypress="rcxMain.lbKeyPress(event);" />
+			</hbox>
+			<splitter id="rcx-lookupbar-split" tooltiptext="Resize" resizeafter="grow">
+				<vbox id="rcx-lookupbar-grip" />
+			</splitter>
+		</toolbaritem>
+
+		<toolbarbutton id="rikaichan-lbar-search" tooltiptext="&rikaichan.lbar.search.tip;"
+			oncommand="rcxMain.lbSearchButton();" />
+		<toolbarbutton id="rikaichan-lbar-copy" tooltiptext="&rikaichan.lbar.copy.tip;"
+			oncommand="rcxMain.copyToClip();" />
+		<toolbarbutton id="rikaichan-lbar-save" tooltiptext="&rikaichan.lbar.save.tip;"
+			oncommand="rcxMain.saveToFile();" />
+		<toolbarbutton id="rikaichan-lbar-config" tooltiptext="&rikaichan.lbar.config.tip;"
+			oncommand="rcxMain.configPage();" />
+	</toolbar>
+</window>
+
+<toolbarpalette id="MsgComposeToolbarPalette">
+	<toolbarbutton id="rikaichan-toggle-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
+		label="&rikaichan.toolbar.toggle;" tooltiptext="&rikaichan.toolbar.toggle.tip;"
+		command="rikaichan-toggle-cmd" />
+	<toolbarbutton id="rikaichan-lbar-button" class="toolbarbutton-1 chromeclass-toolbar-additional"
+		label="&rikaichan.toolbar.lbar;" tooltiptext="&rikaichan.toolbar.lbar.tip;"
+		command="rikaichan-lbar-cmd" />
+	<toolbarbutton id="rikaichan-toggle-button-gs" class="toolbarbutton-1 chromeclass-toolbar-additional"
+		label="&rikaichan.toolbar.toggle;" tooltiptext="&rikaichan.toolbar.toggle.tip;"
+		command="rikaichan-toggle-cmd" />
+	<toolbarbutton id="rikaichan-lbar-button-gs" class="toolbarbutton-1 chromeclass-toolbar-additional"
+		label="&rikaichan.toolbar.lbar;" tooltiptext="&rikaichan.toolbar.lbar.tip;"
+		command="rikaichan-lbar-cmd" />
+
+	<toolbaritem id="rcx-lookupbox" title="Rikaichan Lookup">
+		<hbox id="rcx-lookupbox-hbox" align="center" persist="width">
+			<textbox id="rcx-lookupbox-text" emptytext="rikaichan" flex="1"
+				onkeypress="rcxMain.lookupBoxKey(event);" />
+		</hbox>
+		<splitter id="rcx-lookupbox-split" tooltiptext="Resize" resizeafter="grow">
+			<vbox id="rcx-lookupbox-grip" />
+		</splitter>
+	</toolbaritem>
+</toolbarpalette>
+
+<statusbar id="status-bar" class="chromeclass-status">
+	<statusbarpanel id="rikaichan-status-text" hidden="true" label="" context="" onclick="this.hidden=true;"/>
+	<statusbarpanel id="rikaichan-status" class="statusbarpanel-iconic" tooltiptext="&rikaichan.toolbar.toggle.tip;"
+		contextmenu="rikaichan-status-menu" onclick="rcxMain.statusClick(event)"/>
+	<popupset>
+		<menupopup id="rikaichan-status-menu">
+			<menuitem label="&rikaichan.toolbar.toggle;" command="rikaichan-toggle-cmd" id="rikaichan-toggle-sm" type="checkbox" default="true"/>
+			<menuitem label="&rikaichan.toolbar.lbar;" command="rikaichan-lbar-cmd"/>
+			<menuitem label="&rikaichan.toolbar.options;" command="rikaichan-options-cmd"/>
+		</menupopup>
+	</popupset>
+</statusbar>
+
+</overlay>
