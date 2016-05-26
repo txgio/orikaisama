@@ -262,3 +262,8 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Current item */
+#rikaichan-window .w-current-item-arrow {
+  color: #000000;
+}

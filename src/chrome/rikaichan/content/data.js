@@ -847,7 +847,7 @@ var rcxData = {
 				}
 
                 if (i == index) {
-                    k += '<span style="color: #000;">&#9658;&nbsp;</span>';
+                    k += '<span class="w-current-item-arrow">&#9658;&nbsp;</span>';
                 }
                 
 				if (e[2]) {
