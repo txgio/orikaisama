@@ -1,0 +1,24 @@
+apply plugin: 'base'
+
+task zipRikaichanChrome(type: Zip) {
+    from 'src/chrome/rikaichan'
+    baseName = 'rikaichan'
+    destinationDir = new File('build/extension/chrome')
+    extension = 'jar'
+}
+
+task copyTask(type: Copy) {
+    from ('src') {
+        exclude 'chrome/rikaichan'
+    }
+    into 'build/extension'
+}
+
+task xpiExtension(type: Zip, dependsOn: ['copyTask', 'zipRikaichanChrome']) {
+    from 'build/extension'
+    baseName = 'rikaisama'
+    destinationDir = new File('build/xpi')
+    extension = 'xpi'
+}
+
+task buildXpi(dependsOn: ['clean', 'xpiExtension'])
