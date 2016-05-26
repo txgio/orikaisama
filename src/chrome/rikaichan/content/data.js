@@ -847,7 +847,7 @@ var rcxData = {
 				}
 
                 if (i == index) {
-                    k += '<span style="color: red;">*</span>';
+                    k += '<span style="color: #000;">&#9658;&nbsp;</span>';
                 }
                 
 				if (e[2]) {
