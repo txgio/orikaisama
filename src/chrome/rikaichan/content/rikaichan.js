@@ -59,6 +59,8 @@ var rcxMain = {
   epwingCurHit: 0,              // The current EPWING hit number (for showing hits one at a time)
   epwingPrevHit: 0,             // The previous EPWING hit number
   epwingCurDic: "",             // The EPWING dictionary to use (path)
+  normalCurHit: 0,
+  normalTotalHits: 0,
   prevEpwingSearchTerm: "",     // The previous search term used with EPWING mode
   epwingFallbackCount: 0,       // How many times have we attempted to fallback to another EPWING dictionary?
   epwingStartDic: "",           // The dictionary used for the original EPWING lookup (before any fallbacks)
@@ -783,6 +785,7 @@ var rcxMain = {
     // Reset the EPWING hit number and hit totals
     this.epwingTotalHits = 0;
     this.epwingCurHit = 0;
+    this.normalCurHit = 0;
     this.epwingPrevHit = 0;
 
     // Don't hide popup in superSticky unless given permission to
@@ -876,7 +879,7 @@ var rcxMain = {
 		if (!f.fromLB) mk = 1;
 
 		e = f[0];
-		text = rcxData.makeText(e, w, s, sWBlank, rcxMain.saveKana, saveFormat);
+		text = rcxData.makeText(e, w, s, sWBlank, rcxMain.saveKana, saveFormat, this.normalCurHit);
 
     // Result the save kana ($d=$r) flag
     rcxMain.saveKana = false;
@@ -2968,7 +2971,7 @@ var rcxMain = {
       }
     }
     // Is an entire word selected?
-    else if(hilitedEntry[0] && hilitedEntry[0].data[0])
+    else if(hilitedEntry[0] && hilitedEntry[0].data[this.normalCurHit])
     {
       // Extract needed data from the hilited entry
       //   entryData[0] = kanji/kana + kana + definition
@@ -2976,7 +2979,7 @@ var rcxMain = {
       //   entryData[2] = kana (null if no kanji)
       //   entryData[3] = definition
       var entryData =
-        hilitedEntry[0].data[0][0].match(/^(.+?)\s+(?:\[(.*?)\])?\s*\/(.+)\//);
+        hilitedEntry[0].data[this.normalCurHit][0].match(/^(.+?)\s+(?:\[(.*?)\])?\s*\/(.+)\//);
 
       if (!entryData)
       {
@@ -3296,6 +3299,12 @@ var rcxMain = {
         }
 
         this.show(ev.currentTarget.rikaichan);
+      } else {
+        this.normalCurHit--;
+        if (this.normalCurHit < 0) {
+            this.normalCurHit = this.normalTotalHits - 1;
+        }
+        this.show(ev.currentTarget.rikaichan);
       }
       break;
 
@@ -3307,6 +3316,9 @@ var rcxMain = {
 
         this.epwingPrevHit = this.epwingCurHit;
         this.epwingCurHit = (this.epwingCurHit + 1) % this.epwingTotalHits;
+        this.show(ev.currentTarget.rikaichan);
+      } else {
+        this.normalCurHit = (this.normalCurHit + 1) % this.normalTotalHits;
         this.show(ev.currentTarget.rikaichan);
       }
       break;
@@ -3746,6 +3758,7 @@ var rcxMain = {
 			return 0;
 		}
 		this.lastFound = [e];
+        this.normalTotalHits = e.data.length;
 
     // Find the highlighted word, rather than the JMDICT lookup
 		this.word = text.substring(0, e.matchLen);
@@ -3823,7 +3836,7 @@ var rcxMain = {
       // Normal popup
       else
       {
-        this.showPopup(rcxMain.getKnownWordIndicatorText() + rcxData.makeHtml(e), tdata.prevTarget, tdata.pos);
+        this.showPopup(rcxMain.getKnownWordIndicatorText() + rcxData.makeHtml(e, this.normalCurHit), tdata.prevTarget, tdata.pos);
       }
     }
 
