@@ -671,11 +671,12 @@ var rcxData = {
 		'U',	'Unicode'
 	],
 
-	makeHtml: function(entry) {
+	makeHtml: function(entry, idx) {
 		var e;
 		var b;
 		var c, s, t;
 		var i, j, n;
+        var index = idx ? idx : 0;
 
 		if (entry == null) return '';
 
@@ -845,8 +846,12 @@ var rcxData = {
 					k = t.length ? '<br/>' : '';
 				}
 
+                if (i == index) {
+                    k += '<span style="color: red;">*</span>';
+                }
+                
 				if (e[2]) {
-					if (pK == e[1]) k = '\u3001 <span class="w-kana">' + e[2] + '</span>';
+					if (pK == e[1]) k += '\u3001 <span class="w-kana">' + e[2] + '</span>';
 						else k += '<span class="w-kanji">' + e[1] + '</span> &#32; <span class="w-kana">' + e[2] + '</span>';
 					pK = e[1];
 				}
@@ -915,12 +920,13 @@ var rcxData = {
   // sentenceWBlank = Like sentence except the highlighted word is replaced with blanks
   // saveKana       = Replace kanji with kana (that is, $d=$r)
   // saveFormat     = Token-based save format
-  makeText: function(entry, word, sentence, sentenceWBlank, saveKana, saveFormat)
+  makeText: function(entry, word, sentence, sentenceWBlank, saveKana, saveFormat, idx)
   {
     var entryData;
     var b;
     var i, j, k;
     var t;
+    var index = idx ? idx : 0;
 
     if ((entry == null) || (entry.data == null))
     {
@@ -945,7 +951,7 @@ var rcxData = {
     //   entryData[2] = kana (null if no kanji)
     //   entryData[3] = definition
 
-    entryData = entry.data[0][0].match(/^(.+?)\s+(?:\[(.*?)\])?\s*\/(.+)\//);
+    entryData = entry.data[index][0].match(/^(.+?)\s+(?:\[(.*?)\])?\s*\/(.+)\//);
 
     // Components.utils.reportError("entryData[0]="+entryData[0]);
     // Components.utils.reportError("entryData[1]="+entryData[1]);
