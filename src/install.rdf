@@ -2,7 +2,7 @@
 <RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
 	<Description about="urn:mozilla:install-manifest">
-		<em:id>{697F6AFE-5321-4DE1-BFE6-4471C3721BD4}</em:id>
+		<em:id>orikaisama@txg.io</em:id>
     <em:type>2</em:type>
 		<em:name>Rikaisama</em:name>
 		<em:version>22.9.3</em:version>

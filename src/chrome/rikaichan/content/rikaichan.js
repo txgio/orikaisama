@@ -44,7 +44,7 @@ var rcxMain = {
 	altView: 0,
 	enabled: 0,
 	sticky: false,
-	id: '{697F6AFE-5321-4DE1-BFE6-4471C3721BD4}',
+	id: 'orikaisama@txg.io',
 	version: null,
   lastTdata: null,              // TData used for Sanseido mode and EPWING mode popup
   sanseidoMode: false,          // Are we in Sanseido mode?
@@ -525,7 +525,7 @@ var rcxMain = {
 
 	checkVersion: function() {
 		Components.utils.import('resource://gre/modules/AddonManager.jsm');
-		AddonManager.getAddonByID('{697F6AFE-5321-4DE1-BFE6-4471C3721BD4}', function(addon) {
+		AddonManager.getAddonByID('orikaisama@txg.io', function(addon) {
 			rcxMain.version = addon.version;
 			let prefs = new rcxPrefs();
 			if (prefs.getString('version') != addon.version) {

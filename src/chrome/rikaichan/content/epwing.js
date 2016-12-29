@@ -26,7 +26,7 @@
 
 var rcxEpwing =
 {
-  id: '{697F6AFE-5321-4DE1-BFE6-4471C3721BD4}', // ID of the Rikaisama extension.
+  id: 'orikaisama@txg.io', // ID of the Rikaisama extension.
   lookupInProgress: false, // true = A lookup is currently in progress.
   paramDicPath:  '',       // Path of EPWING dictionary
   paramWordList: '',       // Word list to lookup
